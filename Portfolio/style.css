@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  color: #333;
+  line-height: 1.6;
+  background-size: 300% 300%; /* Increased size for smoother transition */
+}
+
+/* General styling for the navigation items */
+.nav-link {
+  color: #000; /* Default text color (dark) */
+}
+
+/* Styling for active or current page */
+.nav-link.active,
+.nav-link:focus,
+.nav-link:hover {
+  color: #fff; /* Light text color when active or hovered */
+  background-color: #333; /* Dark background color */
+}
+
+/* Optional: Styling for the navigation pills background */
+.nav-pills .nav-link {
+  border-radius: 0.25rem; /* Rounded corners for the pills */
+}
+
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+    background: linear-gradient(120deg, #f6d365, #fda085, #a1c4fd);
+  }
+  50% {
+    background-position: 100% 50%;
+    background: linear-gradient(120deg, #a1c4fd, #d4fc79, #96e6a1);
+  }
+  100% {
+    background-position: 0% 50%;
+    background: linear-gradient(120deg, #d4fc79, #96e6a1, #f6d365);
+  }
+}
